@@ -1,0 +1,155 @@
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="page-header">
+			<strong>PRODUCTOS</strong> <br/>
+			<div class="css3gradient"></div>
+		</h4>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-12">
+                <form role="form">
+                    <fieldset>
+						<div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+									<label>Nombre Producto</label>
+									<input class="form-control input-sm" placeholder="" title="N&deg; Certificado / N&deg; Nombre Producto" type="text">
+									<span class="help-block"></span>
+								</div>
+                            </div>
+                            <div class="col-md-2 col-md-offset-1">
+                                <div class="form-group">
+                                    <label>&nbsp;</label>
+                                    <a href="#" class="btn btn-sm btn-primary btn-block" title="Buscar"><i class="fa fa-search"></i>&nbsp; BUSCAR</a>
+                                    <span class="help-block"></span>
+                                </div>
+                            </div>
+                        </div> 
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div> &nbsp; </div>
+	<div> &nbsp; </div>
+
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover" id="datable-grilla-bandeja-sol-usuario">
+                        <thead>	
+                            <tr>
+                            	<th class="text-center">Sel.</th>
+                                <th class="text-center">Nom. Producto</th>
+                                <th class="text-center">Descripción</th>
+                                <th class="text-center">Categoría</th>
+                                <th class="text-center">Stock</th>
+                                <th class="text-center">Estado</th>
+                                <th class="text-center">Ver</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="odd">
+                                <td class="text-center">
+									<input type="radio" name="rdn_seleccion">
+                                </td>
+                                <td>Producto 1</td>
+                                <td></td> 
+                                <td></td>
+								<td></td>
+                                <td class="text-center">Activo</td>
+								<td class="text-center">
+									<a href="#" title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
+								</td>
+                            </tr>
+                            <tr class="even">
+                                <td class="text-center">
+                                    <input type="radio" name="rdn_seleccion">
+                                </td>
+                                <td>Producto 2</td>
+                                <td></td> 
+                                <td></td>
+                                <td></td>
+                                <td class="text-center">Activo</td>
+                                <td class="text-center">
+                                    <a href="#" title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
+                                </td>
+                            </tr>
+                            <tr class="odd">
+                                <td class="text-center">
+                                    <input type="radio" name="rdn_seleccion">
+                                </td>
+                                <td>Producto 3</td>
+                                <td></td> 
+                                <td></td>
+                                <td></td>
+                                <td class="text-center">Activo</td>
+                                <td class="text-center">
+                                    <a href="#" title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
+                                </td>
+                            </tr> 
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div> &nbsp; </div>
+    <div class="row">
+        <div class="col-md-2 col-md-offset-3">
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <a href="javascript:cargar( 'productos-nuevo.html' );" class="btn btn-sm btn-primary btn-block" title="Nuevo"><i class="fa fa-file-o"></i>&nbsp; NUEVO</a>
+                <span class="help-block"></span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <a href="javascript:cargar( 'productos-editar.html' );" class="btn btn-sm btn-primary btn-block" title="Editar"><i class="fa fa-pencil"></i>&nbsp; EDITAR</a>
+                <span class="help-block"></span>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+                <label>&nbsp;</label>
+                <a href="#" class="btn btn-sm btn-primary btn-block" title="Eliminar"><i class="fa fa-trash"></i>&nbsp; ELIMINAR</a>
+                <span class="help-block"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+
+		$('#datable-grilla-bandeja-sol-usuario').dataTable({
+			lengthMenu: [[15, 25, 50, -1], [15, 25, 50, "All"]],
+			paging: true,
+			searching: true,
+			dom: '<"row" <"col-sm-5" f><"col-sm-1"><"col-sm-4" l><"#button-area-productos.col-sm-2">  >t<"row" <"col-sm-6" i><"col-sm-6" p> >',
+			language: {
+				info:  "Registros: _START_ - _END_ de _TOTAL_ registros",
+				lengthMenu: "_MENU_  registros por p&aacute;gina",
+				paginate: {
+					first:      "Primero",
+					last:       "&Uacute;ltimo",
+					next:       "Siguiente",
+					previous:   "Anterior"
+				},
+				search: "Buscar "
+			}
+		});
+		$( "#button-area-productos" ).append('<p style="text-align: right;"><a href="#" title="Exportar a EXCEL" style="font-size: 24px;"><i style="color:#0B6138;" class="fa fa-file-excel-o"></i></a></p>');
+ 
+		// cargar html del popup
+		// cargarDiv( 'contenido-bandeja-admisibilidad-ver-historial-tramite-popup.html', '#divhtml-contenido-bandeja-admisibilidad-ver-historial-tramite' );
+
+    });
+</script>

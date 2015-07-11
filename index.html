@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>     
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sistema de Veterinara - MI MASCOTA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- MetisFolder CSS -->
+    <link href="css/metisFolder.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Date Picker -->
+    <link rel="stylesheet" href="css/datepicker.css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+        @import url(http://fonts.googleapis.com/css?family=Lato:700,400);
+        @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+        @import url(http://fonts.googleapis.com/css?family=Pacifico);
+    </style>
+
+</head>
+
+<body>  
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h4>&nbsp;&nbsp;<img src="image/susalud-logo-medium.png" alt="" class="img-rounded"><span class="naranja-susalud">Sistema de Veterinaria</span> &nbsp;<small>MI MASCOTA</small></h4>
+            </div>
+            <ul class="nav navbar-top-links navbar-right latizator">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="cambio-clave.html"><i class="fa fa-user fa-fw"></i> Cambiar contrase&ntilde;a</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Cerrar sesi&oacute;n</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>    
+        <nav class="navbar-fixed-top">
+            <div class="navbar-default sidebar latizator" role="navigation" id="menuNavegacion">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+    					<li>
+                            <a href="#" title="M&oacute;dulo de Mantenimiento"><i class="fa fa-sitemap fa-fw"></i> Mantenimientos<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="javascript:cargar( 'clientes.html' );" title="Clientes"><i class="fa fa-caret-right fa-fw"></i> Clientes</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:cargar( 'pacientes.html' );" title="Pacientes"><i class="fa fa-caret-right fa-fw"></i> Pacientes</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:cargar( 'productos.html' );" title="Productos"><i class="fa fa-caret-right fa-fw"></i> Productos</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:cargar( 'servicios.html' );" title="Servicios"><i class="fa fa-caret-right fa-fw"></i> Servicios</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" title="Gestionar"><i class="fa fa-sitemap fa-fw"></i> Gestionar<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="javascript:cargar( 'citas.html' );" title="Citas"><i class="fa fa-caret-right fa-fw"></i> Citas</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:cargar( 'orden-servicios.html' );" title="Ordenes de Servicios"><i class="fa fa-caret-right fa-fw"></i> Ordenes de Servicios</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:cargar( 'recordatorios.html' );" title="Orden de Servicio"><i class="fa fa-caret-right fa-fw"></i> Recordatorios</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div> &nbsp; </div>
+		<div> &nbsp; </div>
+
+        <!-- aqui se cargan los htmls dinamicamente -->
+        <div id="page-wrapper"></div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+
+    <!-- Datepicker -->
+
+    <!-- DataTables JavaScript -->
+    <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+   
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+    
+    <!-- Custom DatePicker -->
+    <script src="js/bootstrap-datepicker.js"></script>
+    
+    <!-- custom html -->
+    <script type="text/javascript">
+        function cargar(htmlFileName) {
+            var url = htmlFileName + '?r=' + Math.random();
+            $("#page-wrapper").load(url);
+        }
+
+        function cargarDiv(htmlFileName, divID) {
+            var url = htmlFileName + '?r=' + Math.random();
+            $(divID).load(url);
+        }
+    </script>
+</body>
+</html>
