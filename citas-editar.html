@@ -20,77 +20,151 @@
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label>Tipo Documento</label>
-                                            <select class="form-control input-sm" title="Tipo Documento" name="tipoDocumento">
-                                                <option>(Seleccione)</option>
-                                                <option selected>DNI</option>
-                                                <option>CE</option>
-                                                <option>LE</option>
-                                            </select>
+                                            <label>Fecha</label>
+                                            <input class="form-control input-sm" placeholder="" title="Fecha" type="date" value="12/08/2015">
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
-                                            <label>N&uacute;mero Documento</label>
-                                            <input type="text" class="form-control input-sm" placeholder="" title="N&uacute;mero Documento" name="nDocumento" value="70444183">
+                                            <label>Hora</label>
+                                            <input class="form-control input-sm" placeholder="" title="Hora" type="time" value="12:00" disabled>
                                             <span class="help-block"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Cliente</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" name="cliente" title="Cliente"/>
+                                                <span class="input-group-btn">
+                                                    <a href="#" data-toggle="modal" data-target="#modelCliente" title="Buscar Cliente" class="btn btn-default" type="button">
+                                                        <i class="fa fa-search"></i>
+                                                    </a>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 								<div class="row">
-									<div class="col-md-4">
+									<div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Nombres</label>
-                                            <input type="text" class="form-control input-sm" placeholder="" title="Nombres" name="nombres" value="Miguel Angel">
+                                            <label>Observaciones</label>
+                                            <textarea class="form-control input-sm" placeholder="" title="Observaciones" row="3"></textarea>
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Apellido Paterno</label>
-                                            <input type="text" class="form-control input-sm" placeholder="" title="Apellido Paterno" name="apePaterno" value="Aranya">
-                                            <span class="help-block"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>Disponibilidad</strong>
+                            </div>
+                            <div class="panel-body"> 
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <div aria-label="First group" role="group" class="btn-group">
+                                            <button class="btn btn-default" type="button" disabled>08:00</button>
+                                            <button class="btn btn-default" type="button">09:00</button>
+                                            <button class="btn btn-default" type="button">10:00</button>
+                                            <button class="btn btn-default" type="button" disabled>11:00</button>
+                                            <button class="btn btn-default" type="button" style="background-color: #5b8ddb">12:00</button>
+                                            <button class="btn btn-default" type="button">13:00</button>
+                                            <button class="btn btn-default" type="button" disabled>14:00</button>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-4">
+                                        <div aria-label="First group" role="group" class="btn-group">
+                                            <button class="btn btn-default" type="button">15:00</button>
+                                            <button class="btn btn-default" type="button" disabled>16:00</button>
+                                            <button class="btn btn-default" type="button">17:00</button>
+                                            <button class="btn btn-default" type="button">18:00</button>
+                                            <button class="btn btn-default" type="button">19:00</button>
+                                            <button class="btn btn-default" type="button">20:00</button>
+                                            <button class="btn btn-default" type="button" disabled>21:00</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <strong>Servicios</strong>
+                            </div>
+                            <div class="panel-body"> 
+                                <div class="row">
+                                    <div class="col-md-3">
                                         <div class="form-group">
-                                            <label>Apellido Materno</label>
-                                            <input type="text" class="form-control input-sm" placeholder="" title="Apellido Materno" name="apeMaterno" value="Chaico">
+        									<label>Servicio</label>
+        									<select class="form-control input-sm" title="Servicio" name="Servicio">
+                                                <option selected>(Seleccione)</option>
+                                                <option>Desparasitaci&oacute;n</option>
+                                                <option>Baños</option>
+                                                <option>Vacunas</option>
+                                            </select>
+        									<span class="help-block"></span>
+        								</div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="form-group">
+        									<label>Cantidad</label>
+        									<input type="number" class="form-control input-sm" title="Cantidad" name="Cantidad" value="1" min="1">
+        									<span class="help-block"></span>
+        								</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label></label>
+                                            <a href="#" class="btn btn-sm btn-primary btn-block" title="Agregar"><i class="fa fa-new"></i>&nbsp; AGREGAR</a>
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Direcci&oacute;n</label>
-                                            <input type="text" class="form-control input-sm" placeholder="" title="Direcci&oacute;n" name="direccion" value="Av. La Paz 1359">
-                                            <span class="help-block"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Fecha de Nacimiento</label>
-                                            <input class="form-control input-sm" placeholder="" title="Fecha de Nacimiento" name="fecha" id="fecha" value="07/09/1988">
-                                            <span class="help-block"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Tel&eacute;fono</label>
-                                            <input type="text" class="form-control input-sm" placeholder="" title="Tel&eacute;fono" name="telefono" value="986686182">
-                                            <span class="help-block"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label>Email</label>
-                                            <div class="input-group input-group-sm">
-                                                <span class="input-group-addon" id="sizing-addon3">@</span>
-                                                <input type="text" class="form-control" placeholder="Correo electr&oacute;nico" aria-describedby="sizing-addon3" value="miguelaranya@gmail.com">
+                                    <div class="col-md-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped table-bordered table-hover" id="datable-grilla-bandeja-sol-usuario-ver">
+                                                        <thead>	
+                                                            <tr>
+                                                                <th class="text-center">C&oacute;d. Servicio</th>
+                                                                <th class="text-center">Nombre Servicio</th>
+                                                                <th class="text-center">Cantidad</th>
+                                                                <th class="text-center">Acci&oacute;n</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="odd">
+                                                                <td>&nbsp;</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>&nbsp;</td>
+                                                                <td class="text-center">
+                                									<a href="#" title="Quitar"><i class="fa fa-remove iconRemoveColor"></i></a>
+                                								</td>
+                                                            </tr>
+                                                            <tr class="even">
+                                                                <td>&nbsp;</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>&nbsp;</td>
+                                                                <td class="text-center">
+                                									<a href="#" title="Quitar"><i class="fa fa-remove iconRemoveColor"></i></a>
+                                								</td>
+                                                            </tr>
+                                                            <tr class="odd">
+                                                                <td>&nbsp;</td>
+                                                                <td>&nbsp;</td>
+                                                                <td>&nbsp;</td>
+                                                                <td class="text-center">
+                                									<a href="#" title="Quitar"><i class="fa fa-remove iconRemoveColor"></i></a>
+                                								</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -120,12 +194,3 @@
         </div>
     </div>
 </div>
-
-
-<script>
-$(document).ready(function () {            
-    $('#fecha').datepicker({
-        format: "dd/mm/yyyy"
-    });
-});
-</script>

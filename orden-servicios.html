@@ -29,14 +29,14 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Fecha Inicio</label>
-                                    <input class="form-control input-sm" placeholder="" title="Fecha Inicio" name="fechaIni" id="fecha" value="10/07/2015">
+                                    <input class="form-control input-sm" placeholder="" title="Fecha Inicio" name="fechaIni" id="fecha" value="10/07/2015" type="date">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Fecha Fin</label>
-                                    <input class="form-control input-sm" placeholder="" title="Fecha Fin" name="fechaFin" id="fechafin" value="10/07/2015">
+                                    <input class="form-control input-sm" placeholder="" title="Fecha Fin" name="fechaFin" id="fechafin" value="10/07/2015" type="date">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -162,13 +162,5 @@
 			}
 		});
 		$( "#button-area-orden-servicio" ).append('<p style="text-align: right;"><a href="#" title="Exportar a EXCEL" style="font-size: 24px;"><i style="color:#0B6138;" class="fa fa-file-excel-o"></i></a></p>');
- 
-        $('#fecha').datepicker({
-            format: "dd/mm/yyyy"
-        });
-
-        $('#fechafin').datepicker({
-            format: "dd/mm/yyyy"
-        });
     });
 </script>

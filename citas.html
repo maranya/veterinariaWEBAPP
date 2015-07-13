@@ -18,8 +18,8 @@
                                 <div class="form-group">
 									<label>Estado</label>
 									<select class="form-control input-sm" title="Estado" name="Estado">
-                                        <option>(Seleccione)</option>
-                                        <option selected>Pendiente</option>
+                                        <option selected>(Todas)</option>
+                                        <option>Pendiente</option>
                                         <option>Atendido</option>
                                         <option>Anulado</option>
                                     </select>
@@ -29,14 +29,14 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Fecha de Inicio</label>
-                                    <input class="form-control input-sm" placeholder="" title="Fecha de Inicio" name="fecha" id="fecha">
+                                    <input class="form-control input-sm" placeholder="" title="Fecha de Inicio" name="fecha" id="fecha" type="date">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Fecha de Fin</label>
-                                    <input class="form-control input-sm" placeholder="" title="Fecha de Fin" name="fecha" id="fechafin">
+                                    <input class="form-control input-sm" placeholder="" title="Fecha de Fin" name="fecha" id="fechafin" type="date">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                                 <td>Graziella Villafuerte</td>
                                 <td>Pendiente</td>
 								<td class="text-center">
-									<a href="#" title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
+									<a href="javascript:cargar( 'citas-ver.html' )" title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
 								</td>
                             </tr>
                             <tr class="even">
@@ -94,7 +94,7 @@
                                 <td>Miguel Aranya</td> 
                                 <td>Pendiente</td>
                                 <td class="text-center">
-                                    <a href="#" title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
+                                    <a href="javascript:cargar( 'citas-ver.html' )" title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
                                 </td>
                             </tr>
                             <tr class="odd">
@@ -106,7 +106,7 @@
                                 <td>Yadhira Hermoza</td>
                                 <td>Atendida</td>
                                 <td class="text-center">
-                                    <a href="#" title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
+                                    <a href="javascript:cargar( 'citas-ver.html' ) title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
                                 </td>
                             </tr> 
                         </tbody>
@@ -162,13 +162,5 @@
 			}
 		});
 		$( "#button-area-citas" ).append('<p style="text-align: right;"><a href="#" title="Exportar a EXCEL" style="font-size: 24px;"><i style="color:#0B6138;" class="fa fa-file-excel-o"></i></a></p>');
-
-        $('#fecha').datepicker({
-            format: "dd/mm/yyyy"
-        });
-
-        $('#fechafin').datepicker({
-            format: "dd/mm/yyyy"
-        });
     });
 </script>

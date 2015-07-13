@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-12">
         <h4 class="page-header">
-			<strong> CREAR CITA </strong> <br/>
+			<strong> VER CITA </strong> <br/>
             <div class="css3gradient"></div>
         </h4>
     </div>
@@ -21,14 +21,14 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Fecha</label>
-                                            <input class="form-control input-sm" placeholder="" title="Fecha" type="date">
+                                            <input class="form-control input-sm" placeholder="" title="Fecha" type="date" value="12/08/2015" disabled>
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Hora</label>
-                                            <input class="form-control input-sm" placeholder="" title="Hora" type="time" disabled>
+                                            <input class="form-control input-sm" placeholder="" title="Hora" type="time" value="12:00" disabled>
                                             <span class="help-block"></span>
                                         </div>
                                     </div>
@@ -38,7 +38,7 @@
                                             <div class="input-group">
                                                 <input type="text" class="form-control" name="cliente" title="Cliente"/>
                                                 <span class="input-group-btn">
-                                                    <a href="#" data-toggle="modal" data-target="#modelCliente" title="Buscar Cliente" class="btn btn-default" type="button">
+                                                    <a href="#" data-toggle="modal" data-target="#modelCliente" title="Buscar Cliente" class="btn btn-default" type="button" disabled>
                                                         <i class="fa fa-search"></i>
                                                     </a>
                                                 </span>
@@ -50,41 +50,8 @@
 									<div class="col-md-12">
                                         <div class="form-group">
                                             <label>Observaciones</label>
-                                            <textarea class="form-control input-sm" placeholder="" title="Observaciones" row="3"></textarea>
+                                            <textarea class="form-control input-sm" placeholder="" title="Observaciones" row="3" disabled></textarea>
                                             <span class="help-block"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <strong>Disponibilidad</strong>
-                            </div>
-                            <div class="panel-body"> 
-                                <div class="row">
-                                    <div class="col-md-4 col-md-offset-4">
-                                        <div aria-label="First group" role="group" class="btn-group">
-                                            <button class="btn btn-default" type="button">08:00</button>
-                                            <button class="btn btn-default" type="button">09:00</button>
-                                            <button class="btn btn-default" type="button">10:00</button>
-                                            <button class="btn btn-default" type="button">11:00</button>
-                                            <button class="btn btn-default" type="button">12:00</button>
-                                            <button class="btn btn-default" type="button">13:00</button>
-                                            <button class="btn btn-default" type="button">14:00</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-4 col-md-offset-4">
-                                        <div aria-label="First group" role="group" class="btn-group">
-                                            <button class="btn btn-default" type="button">15:00</button>
-                                            <button class="btn btn-default" type="button">16:00</button>
-                                            <button class="btn btn-default" type="button">17:00</button>
-                                            <button class="btn btn-default" type="button">18:00</button>
-                                            <button class="btn btn-default" type="button">19:00</button>
-                                            <button class="btn btn-default" type="button">20:00</button>
-                                            <button class="btn btn-default" type="button">21:00</button>
                                         </div>
                                     </div>
                                 </div>
@@ -96,34 +63,6 @@
                             </div>
                             <div class="panel-body"> 
                                 <div class="row">
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-        									<label>Servicio</label>
-        									<select class="form-control input-sm" title="Servicio" name="Servicio">
-                                                <option selected>(Seleccione)</option>
-                                                <option>Desparasitaci&oacute;n</option>
-                                                <option>Baños</option>
-                                                <option>Vacunas</option>
-                                            </select>
-        									<span class="help-block"></span>
-        								</div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="form-group">
-        									<label>Cantidad</label>
-        									<input type="number" class="form-control input-sm" title="Cantidad" name="Cantidad" value="1" min="1">
-        									<span class="help-block"></span>
-        								</div>
-                                    </div>
-                                    <div class="col-md-2">
-                                        <div class="form-group">
-                                            <label></label>
-                                            <a href="#" class="btn btn-sm btn-primary btn-block" title="Agregar"><i class="fa fa-new"></i>&nbsp; AGREGAR</a>
-                                            <span class="help-block"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
                                     <div class="col-md-12">
                                         <div class="panel panel-default">
                                             <div class="panel-body">
@@ -134,7 +73,6 @@
                                                                 <th class="text-center">C&oacute;d. Servicio</th>
                                                                 <th class="text-center">Nombre Servicio</th>
                                                                 <th class="text-center">Cantidad</th>
-                                                                <th class="text-center">Acci&oacute;n</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
@@ -142,25 +80,16 @@
                                                                 <td>&nbsp;</td>
                                                                 <td>&nbsp;</td>
                                                                 <td>&nbsp;</td>
-                                                                <td class="text-center">
-                                									<a href="#" title="Quitar"><i class="fa fa-remove iconRemoveColor"></i></a>
-                                								</td>
                                                             </tr>
                                                             <tr class="even">
                                                                 <td>&nbsp;</td>
                                                                 <td>&nbsp;</td>
                                                                 <td>&nbsp;</td>
-                                                                <td class="text-center">
-                                									<a href="#" title="Quitar"><i class="fa fa-remove iconRemoveColor"></i></a>
-                                								</td>
                                                             </tr>
                                                             <tr class="odd">
                                                                 <td>&nbsp;</td>
                                                                 <td>&nbsp;</td>
                                                                 <td>&nbsp;</td>
-                                                                <td class="text-center">
-                                									<a href="#" title="Quitar"><i class="fa fa-remove iconRemoveColor"></i></a>
-                                								</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
