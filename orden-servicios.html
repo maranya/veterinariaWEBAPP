@@ -18,8 +18,8 @@
                                 <div class="form-group">
 									<label>Estado</label>
 									<select class="form-control input-sm" title="Estado" name="Estado">
-                                        <option>(Seleccione)</option>
-                                        <option selected>Pendiente</option>
+                                        <option selected>(Todos)</option>
+                                        <option>Pendiente</option>
                                         <option>Atendido</option>
                                         <option>Anulado</option>
                                     </select>
@@ -29,14 +29,14 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Fecha Inicio</label>
-                                    <input class="form-control input-sm" placeholder="" title="Fecha Inicio" name="fechaIni" id="fecha" value="10/07/2015" type="date">
+                                    <input class="form-control input-sm" placeholder="" title="Fecha Inicio" type="date">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Fecha Fin</label>
-                                    <input class="form-control input-sm" placeholder="" title="Fecha Fin" name="fechaFin" id="fechafin" value="10/07/2015" type="date">
+                                    <input class="form-control input-sm" placeholder="" title="Fecha Fin" type="date">
                                     <span class="help-block"></span>
                                 </div>
                             </div>
@@ -66,6 +66,7 @@
                             <tr>
                             	<th class="text-center">Sel.</th>
                                 <th class="text-center">Fecha</th>
+                                <th class="text-center">Hora</th>
                                 <th class="text-center">Cliente</th>
                                 <th class="text-center">Importe S/.</th>
                                 <th class="text-center">Estado</th>
@@ -79,10 +80,11 @@
                                 </td>
                                 <td>15/07/2015</td>
                                 <td>Graziella Villafuerte</td>
+                                <td>12:00</td>
                                 <td align="right">85.00</td>
                                 <td>Pendiente</td>
 								<td class="text-center">
-									<a href="#" title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
+									<a href="javascript:cargar( 'orden-servicios-ver.html' )" title="Ver Orden"><i class="fa fa-eye iconEyeColor"></i></a>
 								</td>
                             </tr>
                             <tr class="even">
@@ -90,11 +92,12 @@
                                     <input type="radio" name="rdn_seleccion">
                                 </td>
                                 <td>10/07/2015</td>      
-                                <td>Miguel Aranya</td> 
+                                <td>Miguel Aranya</td>
+                                <td>13:00</td>
                                 <td align="right">110.00</td>
                                 <td>Pendiente</td>
                                 <td class="text-center">
-                                    <a href="#" title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
+                                    <a href="javascript:cargar( 'orden-servicios-ver.html' )" title="Ver Orden"><i class="fa fa-eye iconEyeColor"></i></a>
                                 </td>
                             </tr>
                             <tr class="odd">
@@ -103,10 +106,11 @@
                                 </td>
                                 <td>10/07/2015</td>
                                 <td>Yadhira Hermoza</td>
+                                <td>18:00</td>
                                 <td align="right">43.00</td>
                                 <td>Atendida</td>
                                 <td class="text-center">
-                                    <a href="#" title="Ver Cliente"><i class="fa fa-eye iconEyeColor"></i></a>
+                                    <a href="javascript:cargar( 'orden-servicios-ver.html' )" title="Ver Orden"><i class="fa fa-eye iconEyeColor"></i></a>
                                 </td>
                             </tr> 
                         </tbody>
@@ -117,17 +121,10 @@
     </div>
     <div> &nbsp; </div>
     <div class="row">
-        <div class="col-md-2 col-md-offset-3">
+        <div class="col-md-2 col-md-offset-4">
             <div class="form-group">
                 <label>&nbsp;</label>
-                <a href="javascript:cargar( 'orden-servicio-nuevo.html' );" class="btn btn-sm btn-primary btn-block" title="Nuevo"><i class="fa fa-file-o"></i>&nbsp; NUEVO</a>
-                <span class="help-block"></span>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="form-group">
-                <label>&nbsp;</label>
-                <a href="javascript:cargar( 'orden-servicio-editar.html' );" class="btn btn-sm btn-primary btn-block" title="Editar"><i class="fa fa-pencil"></i>&nbsp; EDITAR</a>
+                <a href="javascript:cargar( 'orden-servicios-nuevo.html' )" class="btn btn-sm btn-primary btn-block" title="Nuevo"><i class="fa fa-file-o"></i>&nbsp; NUEVO</a>
                 <span class="help-block"></span>
             </div>
         </div>
